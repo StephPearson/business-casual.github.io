@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Dunder Mifflin| Contact Us</title>
+        <link href='http://fonts.googleapis.com/css?family=Nixie+One%7COpen+Sans:300%7CPacifico' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            input[type=text],select,textarea{
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              resize: vertical;
+            }
+            label{
+              padding: 12px 12px 12px 0;
+              display: inline-block;
+            }
+            input[type=subbmit]{
+              background-color: green;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              float: right;
+            }
+            input[type=submit]:hover{
+              background-color: lightblue;
+            }
+            .container{
+              border-radius: 5px;
+              background-color: lightgrey;
+              padding: 20px;
+              padding-left: 40px;
+              padding-right: 40px;
+              padding-inline-start: 40px;
+              border-left: 100px solid rgb(248, 244, 244);
+              border-right: 100px solid rgb(248, 244, 244);
+              border-top: 30px solid rgb(248, 244, 244);
+              border-bottom: 30px solid rgb(248, 244, 244);
+              float: center;
+            }
+            .col-25{
+              float: left;
+              width: 25%;
+              margin-top: 6px;
+            }
+            .col-75{
+              float: left;
+              width: 75%;
+              margin-top: 6px;
+            }
+            .row:after{
+              content: "";
+              display: table;
+              clear: both;
+            }
+            @media screen and (max-width:600px){      /*25%-----75% stacking */
+                .col-25,.col-7,input[type=submit]{
+                    width: 100%;
+                    margin-top: 0%;
+                }
+            }
+        </style>
+    </head>
+    <body class="contact">
+        <!-- Header & Nav -->
+        <header>
+            <!-- Page title and tagline -->
+            <div>
+                <h1><span class="highlight">Dunder</span>Mifflin</h1>
+                <h2>The Paper Company</h2>
+            </div>
+            <!-- Navigation links -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main role="main">
+            <h1>Let's meet for coffee!</h1>
+            <p>Send me a message at <a href="mailto:group.e@akqa.com">group.e@akqa.com</a>, or use the form below.</p>
+            <!-- NOTE: The URL below is for testing purposes. Don't forget to replace it with your own form! -->
+            <!-- <iframe width="100%" height="500px" frameborder="0" src="https://docs.google.com/forms/d/e/1FAIpQLSfG_0hMXBMpltL2Tv78tKlL_aCSjsmwPSCT7lfznnQ_Mpaj4g/viewform" /> -->
+        </main>
+        <div class="container">
+            <form>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name*</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="required">
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-25">
+                    <label for="fname">Middle Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="mname" name="middlename" placeholder="optional">
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name*</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="required">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Country*</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="country">
+                    <option value="Ireland">Select</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Duetschland">Deutschland</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Checia">Chechia</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="USA">US A</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Enquiry</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Write your query here" style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+        <!-- page footer -->
+        <footer>
+            <p>&#169; 2022 by <span class="highlight">Dunder</span>Mufflin</p>
+        </footer>
+    </body>
+</html>
